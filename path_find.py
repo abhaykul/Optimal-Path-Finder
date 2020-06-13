@@ -1,8 +1,6 @@
 import sys
 """
-Author: Abhay Vivek Kulkarni
-Id: ak6277@rit.edu
-Lab - 1
+Author: Abhay Kulkarni
 """
 import numpy as np
 from PIL import Image
@@ -470,8 +468,6 @@ op_img_file = sys.argv[5]
 X_DISTANCE = 10.29 # Real-world inter-pixel distance on X-axis in meters
 Y_DISTANCE = 7.55 # Real-world inter-pixel distance on Y-axis in meters
 
-# Comment this out
-ALL_THE_POINTS = []
 
 elevations = np.loadtxt(elev_file)
 elevations = elevations.transpose()
@@ -495,23 +491,18 @@ elif season == "summer":
     print()
 
 total_distance = 0
-"""
+
 for i in range(len(nodes) - 1):
     start = [int(nodes[i][0]), int(nodes[i][1])]
     end = [int(nodes[i + 1][0]), int(nodes[i + 1][1])]
     total_distance += do_a_star()
-
-    # All the points that are "looked at" in red
-    # for pt in ALL_THE_POINTS:
-        # c = pt[1].coordinates
-        # pixel[c[0], c[1]] = (255, 0, 0)
 
     # All the stops that are to be made in pink
     for point in [start, end]:
         all_point = get_neighbours(point, 3)
         for k in all_point:
             pixel[k[0], k[1]] = (76, 0, 153)
-"""
+
 
 
 print("Total distance is: ", total_distance)
