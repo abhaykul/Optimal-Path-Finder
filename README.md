@@ -1,3 +1,3 @@
 # optimal_path_finding
 
-All the deatins are present in the README.pdf
+All the details are present in the README.pdf
