@@ -75,21 +75,16 @@ Let&#39;s assume only a start and end point coordinate.
 
 ## Our goal is to reach the end point in least amount of time.
 
-![](RackMultipart20200708-4-1kecsc2_html_e9af0db1b48a2e4a.jpg) ![](RackMultipart20200708-4-1kecsc2_html_d0e02c171e89040c.gif) ![](RackMultipart20200708-4-1kecsc2_html_46591073bf3d1443.gif)In this case, [230, 327] is the start point (big green point) &amp; [350, 139] is the end point (big red point).
-
+In this case, [230, 327] is the start point (big green point) &amp; [350, 139] is the end point (big red point).
 To see how the algorithm chooses this path:
 
-**1)** All the neighboring points to the start point are considered.
+## All the neighboring points to the start point are considered.
 
-**2)** Now, we have 8 coordinates with their respective elevations.
+## Now, we have 8 coordinates with their respective elevations.
 
-**3)** As we already know the location of the end point, we can calculate a heuristic cost based on that.
+## As we already know the location of the end point, we can calculate a heuristic cost based on that.
+   ***Heuristic cost (h)***: The direct distance between the selected point and the destination point assuming a level and direct paved path between them. We need this cost to basically guide the algorithm in the right direction.
 
-Heuristic cost (h): The direct distance between the selected point and the destination point assuming a level and direct paved path between them.
-
-We need this cost to basically guide the algorithm in the right direction.
-
-![](RackMultipart20200708-4-1kecsc2_html_a40ff3e69c4fa3ea.png)
 
 We need the distance in 2D space and the maximum speed that is achievable on this map, hence we use those parameters to calculate the time required to go from **A** to **B**.
 
