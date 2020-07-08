@@ -33,22 +33,9 @@ Considering these scenarios, the map changes.
 
 The park has various terrains; from open lands, rough meadows, forests, impassable vegetation, lake, paved roads. The movement speed will be different for different terrain. To make things easier, these different terrains are portrayed with colors on a map.
 
-| Terrain type | Color on map &amp; movement speed |
+| Table | Map |
 | --- | --- |
-| Open land | 6 m/s |
-| Rough meadow | 5.5 m/s |
-| Easy movement forest | 4.5 m/s |
-| Slow run forest | 4 m/s |
-| Walk forest | 3 m/s |
-| Impassible vegetation | 0.05 m/s |
-| Lake/Swamp/Marsh | 1 m/s |
-| Paved road | 8 m/s |
-| Footpath | 7.5 m/s |
-| Out of bounds | 10-8 m/s |
-| Ice | 0.5 m/s |
-| Mud | 0.4 m/s |
-
-<img src = "https://user-images.githubusercontent.com/35390062/86868854-81511b80-c0a3-11ea-8cd6-6cdf9329b58b.jpg" height="500" width="395">
+| <img src = "https://user-images.githubusercontent.com/35390062/86871296-fc1c3580-c0a7-11ea-9d1f-92021230c1e4.png" height="500" width="395"> | <img src = "https://user-images.githubusercontent.com/35390062/86868854-81511b80-c0a3-11ea-8cd6-6cdf9329b58b.jpg" height="500" width="395"> |
 
 Summer (Base map)
 
@@ -75,59 +62,39 @@ The seasons change the map in the following way:
 
 In winter, a 7-pixel wide ice layer is formed on the water where the water meets land.
 
-![](RackMultipart20200708-4-1kecsc2_html_65bb3aea0fdb43e1.jpg)
-
-![](RackMultipart20200708-4-1kecsc2_html_c1db40ee308f89fa.jpg)
-
 In Spring, all points within a 15-pixel radius of a waterbody and with less than 1-meter elevation from the neighboring waterbody is covered in mud due to all the ice/snow melting from the winter season.
 
+| Spring | Winter | 
+| --- | --- |
+| <img src = "https://user-images.githubusercontent.com/35390062/86868857-81e9b200-c0a3-11ea-9d3c-c5d02ce2995b.jpg" height="300" width="237"> | <img src = "https://user-images.githubusercontent.com/35390062/86868856-81511b80-c0a3-11ea-93f9-c63c5a1a4bf0.jpg" height="300" width="237"> |
+
 In Fall, the movement speed along the paths near the forested areas is decreased as the leaves have covered all the visible paths.
-
-![](RackMultipart20200708-4-1kecsc2_html_7f7bbfdb149d7e24.png)
-
 The base map is the summer season.
 
 When using multiple checkpoints between start and end, the total distance covered, and path is displayed. The coordinates from the text-file (check\_points.txt) are:
 
-x y
+| x | y |
+| --- | --- |
+| 230 | 327 |
+| 276 | 279 |
+| 322 | 242 |
+| 306 | 286 |
+| 319 | 320 |
+| 325 | 339 |
+| 312 | 366 |
+| 275 | 353 |
+| 253 | 372 |
+| 246 | 355 |
+| 259 | 330 |
+| 288 | 338 |
+| 304 | 331 |
+| 290 | 310 |
+| 269 | 313 |
+| 282 | 321 |
+| 243 | 327 |
+| 230 | 327 |
 
-230 327
-
-276 279
-
-![](RackMultipart20200708-4-1kecsc2_html_66f18cc2c3e1fca2.jpg) 303 240
-
-322 242
-
-306 286
-
-319 320
-
-325 339
-
-312 366
-
-275 353
-
-253 372
-
-246 355
-
-259 330
-
-288 338
-
-304 331
-
-290 310
-
-269 313
-
-282 321
-
-243 327
-
-230 327
+<img src = "https://user-images.githubusercontent.com/35390062/86868867-84e4a280-c0a3-11ea-9240-ac49e7d04330.jpg" height="500" width="395" aligh="right">
 
 Here, the path between the individual check points is highlighted in light-pink and points are black dots.
 
