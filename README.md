@@ -57,16 +57,6 @@ The seasons change the map in the following way:
 - In Fall, the movement speed along the paths near the forested areas is decreased as the leaves have covered all the visible paths.
 The base map is the summer season.
 
-When using multiple checkpoints between start and end, the total distance covered, and path is displayed. The coordinates from the text-file (check\_points.txt) are:
-
-
-| Points to be traversed | Map |
-| --- | --- |
-| <img src = "https://user-images.githubusercontent.com/35390062/86871304-ff172600-c0a7-11ea-8fc4-916c5795746f.png"> | <img src = "https://user-images.githubusercontent.com/35390062/86868867-84e4a280-c0a3-11ea-9240-ac49e7d04330.jpg" height="500" width="395"> |
-
-
-Here, the path between the individual check points is highlighted in light-pink and points are black dots.
-
 # How the algorithm works:
 Let&#39;s assume only a start and end point coordinate.
 
@@ -106,3 +96,16 @@ Hence, we get the path cost (g) and heuristic cost (h).
 The algorithm does a basic best-first search; always considers the coordinates with the lowest cost (f = g + h). By doing an informed heuristic search like A\* the answer might not be the best possible result, but it provides a good-enough result in the shortest time possible by traversing the least possible nodes/coordinates.
 As we can see, the heuristic function chosen does it&#39;s job by guiding the algorithm in the correct direction.
 The distance travelled was 2200 m. It&#39;s the best path considering the distance travelled and the time taken to reach there.
+
+#### This is a sample output
+#### $python3 path\_find.py terrain.png elevations.txt check\_points.txt \&lt;season\_name\&gt; output\_image\_file\_name
+When using multiple checkpoints between start and end, the total distance covered, and path is displayed. The coordinates from the text-file (check\_points.txt) are:
+
+
+| Points to be traversed | Map |
+| --- | --- |
+| <img src = "https://user-images.githubusercontent.com/35390062/86871304-ff172600-c0a7-11ea-8fc4-916c5795746f.png"> | <img src = "https://user-images.githubusercontent.com/35390062/86868867-84e4a280-c0a3-11ea-9240-ac49e7d04330.jpg" height="500" width="395"> |
+
+
+Here, the path between the individual check points is highlighted in light-pink and points are black dots.
+
