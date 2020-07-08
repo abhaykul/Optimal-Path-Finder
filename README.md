@@ -4,13 +4,9 @@ This project finds the shortest path between the start and end points on a 3D te
 
 The map I&#39;ve chosen is of the [Mendon Ponds Park](https://www2.monroecounty.gov/parks-mendonponds.php) of Rochester, NY.
 
-<img src = "https://user-images.githubusercontent.com/35390062/86868216-4dc1c180-c0a2-11ea-861b-cd6f4b899f9a.jpg" height="500" width="395">
-
-
-This is a satellite image from Google Earth outlining the park, it&#39;s trees, and the ponds.
-
-
-<img src = "https://user-images.githubusercontent.com/35390062/86868838-78604a00-c0a3-11ea-9769-65b710f861d8.jpg" height="500" width="395">
+| Satellite Image | Elevation Image |
+| --- | --- |
+| <img src = "https://user-images.githubusercontent.com/35390062/86868216-4dc1c180-c0a2-11ea-861b-cd6f4b899f9a.jpg" height="500" width="395"> | <img src = "https://user-images.githubusercontent.com/35390062/86868838-78604a00-c0a3-11ea-9769-65b710f861d8.jpg" height="500" width="395">|
 
 
 As we can see, it has a different elevation. It has deep ponds and small hills.
@@ -19,13 +15,10 @@ The elevations dataset is gathered from [National Elevation Dataset](http://www.
 
 [Rochester](https://en.wikipedia.org/wiki/Rochester,_New_York) has four seasons:
 
-Summer, which is when these images were taken.
-
-Fall, the land near any tree is cover with leaves.
-
-Winter can get harsh, and most of the water bodies freeze.
-
-Spring, where the snow begins to melt, and it gets muddy.
+- Summer, which is when these images were taken.
+- Fall, the land near any tree is cover with leaves.
+- Winter can get harsh, and most of the water bodies freeze.
+- Spring, where the snow begins to melt, and it gets muddy.
 
 <img src = "https://user-images.githubusercontent.com/35390062/86868842-7a2a0d80-c0a3-11ea-95f4-8e60a1a14cca.jpg" height="400" width="300">
 
@@ -35,7 +28,7 @@ The park has various terrains; from open lands, rough meadows, forests, impassab
 
 | Table | Map |
 | --- | --- |
-| <img src = "https://user-images.githubusercontent.com/35390062/86871296-fc1c3580-c0a7-11ea-9d1f-92021230c1e4.png" height="500" width="395"> | <img src = "https://user-images.githubusercontent.com/35390062/86868854-81511b80-c0a3-11ea-8cd6-6cdf9329b58b.jpg" height="500" width="395"> |
+| <img src = "https://user-images.githubusercontent.com/35390062/86871296-fc1c3580-c0a7-11ea-9d1f-92021230c1e4.png"> | <img src = "https://user-images.githubusercontent.com/35390062/86868854-81511b80-c0a3-11ea-8cd6-6cdf9329b58b.jpg" height="500" width="395"> |
 
 Summer (Base map)
 
@@ -73,28 +66,11 @@ The base map is the summer season.
 
 When using multiple checkpoints between start and end, the total distance covered, and path is displayed. The coordinates from the text-file (check\_points.txt) are:
 
-| x | y |
-| --- | --- |
-| 230 | 327 |
-| 276 | 279 |
-| 322 | 242 |
-| 306 | 286 |
-| 319 | 320 |
-| 325 | 339 |
-| 312 | 366 |
-| 275 | 353 |
-| 253 | 372 |
-| 246 | 355 |
-| 259 | 330 |
-| 288 | 338 |
-| 304 | 331 |
-| 290 | 310 |
-| 269 | 313 |
-| 282 | 321 |
-| 243 | 327 |
-| 230 | 327 |
 
-<img src = "https://user-images.githubusercontent.com/35390062/86868867-84e4a280-c0a3-11ea-9240-ac49e7d04330.jpg" height="500" width="395" aligh="right">
+| Points to be traversed | Map |
+| --- | --- |
+| <img src = "https://user-images.githubusercontent.com/35390062/86871304-ff172600-c0a7-11ea-8fc4-916c5795746f.png"> | <img src = "https://user-images.githubusercontent.com/35390062/86868867-84e4a280-c0a3-11ea-9240-ac49e7d04330.jpg" height="500" width="395"> |
+
 
 Here, the path between the individual check points is highlighted in light-pink and points are black dots.
 
