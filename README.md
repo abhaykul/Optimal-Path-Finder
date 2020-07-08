@@ -48,7 +48,8 @@ The park has various terrains; from open lands, rough meadows, forests, impassab
 | Ice | 0.5 m/s |
 | Mud | 0.4 m/s |
 
-<img src = "" height="500" width="395">
+<img src = "https://user-images.githubusercontent.com/35390062/86868854-81511b80-c0a3-11ea-8cd6-6cdf9329b58b.jpg" height="500" width="395">
+
 Summer (Base map)
 
 This 395x500 map will be used to consider the various terrains. The text file mpp.txt is used for the elevation.
@@ -57,7 +58,8 @@ The interpixel distance to real world distance is 10.29 m in X-axis &amp; 7.55 m
 
 Considering the colored map and elevations from the text file, this map is generated ( 3d\_image.gif )
 
-![](RackMultipart20200708-4-1kecsc2_html_86348944fb0af95.jpg)
+<img src = "https://user-images.githubusercontent.com/35390062/86868855-81511b80-c0a3-11ea-9ad0-c22817775008.jpg">
+
 
 The code takes input as
 
