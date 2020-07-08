@@ -36,7 +36,7 @@ The interpixel distance to real world distance is 10.29 m in X-axis &amp; 7.55 m
 
 The code takes input as
 
-### $python3 path\_find.py terrain.png elevations.txt check\_points.txt \&lt;season\_name\&gt; output\_image\_file\_name
+### $python3 path\_find.py terrain.png elevations.txt check\_points.txt season\_name output\_image\_file\_name
 
 - **terrain.png** is the color-coded image for representing different vegetations.
 - **elevations.txt** contains the elevation of each point corresponding to the pixel in the map
@@ -89,7 +89,7 @@ Hence, we get the path cost (g) and heuristic cost (h).
 
 #### - This procedure is continued until we&#39;ve reached the final point.
 
-| Actual Map with only the path marked | Red area shows the points the algorithm considered |
+| Actual Map with only the path marked | **Red area shows the points the algorithm considered** |
 | --- | --- |
 | <img src = "https://user-images.githubusercontent.com/35390062/86868868-84e4a280-c0a3-11ea-81d8-5a3e977a6c1f.jpg" height="500" width="395"> | <img src = "https://user-images.githubusercontent.com/35390062/86868870-857d3900-c0a3-11ea-99ce-16c3d4083a38.jpg" height="500" width="395"> |
 
@@ -97,8 +97,8 @@ The algorithm does a basic best-first search; always considers the coordinates w
 As we can see, the heuristic function chosen does it&#39;s job by guiding the algorithm in the correct direction.
 The distance travelled was 2200 m. It&#39;s the best path considering the distance travelled and the time taken to reach there.
 
-#### This is a sample output
-#### $python3 path\_find.py terrain.png elevations.txt check\_points.txt \&lt;season\_name\&gt; output\_image\_file\_name
+##### This is a sample output
+##### $python3 path\_find.py terrain.png elevations.txt check\_points.txt season\_name output\_image\_file\_name
 When using multiple checkpoints between start and end, the total distance covered, and path is displayed. The coordinates from the text-file (check\_points.txt) are:
 
 
