@@ -25,11 +25,9 @@ Considering these scenarios, the map changes.
 
 The park has various terrains; from open lands, rough meadows, forests, impassable vegetation, lake, paved roads. The movement speed will be different for different terrain. To make things easier, these different terrains are portrayed with colors on a map.
 
-| Table | Map |
+| Table | Summer (Base map) |
 | --- | --- |
 | <img src = "https://user-images.githubusercontent.com/35390062/86871296-fc1c3580-c0a7-11ea-9d1f-92021230c1e4.png"> | <img src = "https://user-images.githubusercontent.com/35390062/86868854-81511b80-c0a3-11ea-8cd6-6cdf9329b58b.jpg" height="500" width="395"> |
-
-Summer (Base map)
 
 This 395x500 map will be used to consider the various terrains. The text file mpp.txt is used for the elevation.
 
