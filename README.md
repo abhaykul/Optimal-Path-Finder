@@ -78,39 +78,34 @@ Let&#39;s assume only a start and end point coordinate.
 In this case, [230, 327] is the start point (big green point) &amp; [350, 139] is the end point (big red point).
 To see how the algorithm chooses this path:
 
-#### All the neighboring points to the start point are considered.
+#### - All the neighboring points to the start point are considered.
 
-#### Now, we have 8 coordinates with their respective elevations.
+#### - Now, we have 8 coordinates with their respective elevations.
 
-#### As we already know the location of the end point, we can calculate a heuristic cost based on that.
+#### - As we already know the location of the end point, we can calculate a heuristic cost based on that.
 
-   ***Heuristic cost (h)***: The direct distance between the selected point and the destination point assuming a level and direct paved path between them. We need this cost to basically guide the algorithm in the right direction.
+
 
 <img src = "https://user-images.githubusercontent.com/35390062/86868869-84e4a280-c0a3-11ea-8601-5a991998e3a3.jpg">
-
+   
+   ***Heuristic cost (h):*** The direct distance between the selected point and the destination point assuming a level and direct paved path between them. We need this cost to basically guide the algorithm in the right direction.
 We need the distance in 2D space and the maximum speed that is achievable on this map, hence we use those parameters to calculate the time required to go from **A** to **B**.
 
-Distance (d) = $$\sqrt{((X_a - X_b)^2)+(Y_a - Y_b)^2}.$$
-Speed = 8 m/s
-Time taken = d/8 s
-Path cost (g): We use the 3D distance, this time we need the actual time required to go from **A** to **B** considering the difference in elevations and terrains, the final time taken changes drastically.
+  ***Path cost (g):*** We use the 3D distance, this time we need the actual time required to go from **A** to **B** considering the difference in elevations and terrains, the final time taken changes drastically.
 Distance (D) =
 Speed = [(speed)A + (speed)B]/2
 Hence, we get the path cost (g) and heuristic cost (h).
 
-#### Now, we have a bunch of points in a queue with their respective function costs (f).
+#### - Now, we have a bunch of points in a queue with their respective function costs (f).
 
-#### The point at the top of the queue will the point with the lowest function cost. We select that point and then considers its neighbors. This way we always consider the points with the best chance of being considered in the best path first.
+#### - The point at the top of the queue will the point with the lowest function cost. We select that point and then considers its neighbors. This way we always consider the points with the best chance of being considered in the best path first.
 
-#### This procedure is continued until we&#39;ve reached the final point.
+#### - This procedure is continued until we&#39;ve reached the final point.
 
-<img src = "https://user-images.githubusercontent.com/35390062/86868868-84e4a280-c0a3-11ea-81d8-5a3e977a6c1f.jpg" height="500" width="395"> 
-<img src = "https://user-images.githubusercontent.com/35390062/86868870-857d3900-c0a3-11ea-99ce-16c3d4083a38.jpg" height="500" width="395"> 
+| Actual Map with only the path marked | Red area shows the points the algorithm considered |
+| --- | --- |
+| <img src = "https://user-images.githubusercontent.com/35390062/86868868-84e4a280-c0a3-11ea-81d8-5a3e977a6c1f.jpg" height="500" width="395"> | <img src = "https://user-images.githubusercontent.com/35390062/86868870-857d3900-c0a3-11ea-99ce-16c3d4083a38.jpg" height="500" width="395"> |
 
 The algorithm does a basic best-first search; always considers the coordinates with the lowest cost (f = g + h). By doing an informed heuristic search like A\* the answer might not be the best possible result, but it provides a good-enough result in the shortest time possible by traversing the least possible nodes/coordinates.
-
-T ![](RackMultipart20200708-4-1kecsc2_html_e9946dd48a641a59.jpg) he red area indicates all the coordinates searched for going from point A to B.
-
 As we can see, the heuristic function chosen does it&#39;s job by guiding the algorithm in the correct direction.
-
 The distance travelled was 2200 m. It&#39;s the best path considering the distance travelled and the time taken to reach there.
