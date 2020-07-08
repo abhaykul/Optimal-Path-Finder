@@ -36,14 +36,10 @@ This 395x500 map will be used to consider the various terrains. The text file mp
 
 The interpixel distance to real world distance is 10.29 m in X-axis &amp; 7.55 m in Y-axis.
 
-Considering the colored map and elevations from the text file, this map is generated ( 3d\_image.gif )
-
-<img src = "https://user-images.githubusercontent.com/35390062/86868855-81511b80-c0a3-11ea-9ad0-c22817775008.jpg">
-
 
 The code takes input as
 
-$python3 path\_find.py terrain.png elevations.txt check\_points.txt \&lt;season\_name\&gt; output\_image\_file\_name
+### $python3 path\_find.py terrain.png elevations.txt check\_points.txt \&lt;season\_name\&gt; output\_image\_file\_name
 
 - **terrain.png** is the color-coded image for representing different vegetations.
 - **elevations.txt** contains the elevation of each point corresponding to the pixel in the map
@@ -53,15 +49,15 @@ $python3 path\_find.py terrain.png elevations.txt check\_points.txt \&lt;season\
 
 The seasons change the map in the following way:
 
-In winter, a 7-pixel wide ice layer is formed on the water where the water meets land.
+- In winter, a 7-pixel wide ice layer is formed on the water where the water meets land.
 
-In Spring, all points within a 15-pixel radius of a waterbody and with less than 1-meter elevation from the neighboring waterbody is covered in mud due to all the ice/snow melting from the winter season.
+- In Spring, all points within a 15-pixel radius of a waterbody and with less than 1-meter elevation from the neighboring waterbody is covered in mud due to all the ice/snow melting from the winter season.
 
 | Spring | Winter | 
 | --- | --- |
 | <img src = "https://user-images.githubusercontent.com/35390062/86868857-81e9b200-c0a3-11ea-9d3c-c5d02ce2995b.jpg" height="300" width="237"> | <img src = "https://user-images.githubusercontent.com/35390062/86868856-81511b80-c0a3-11ea-93f9-c63c5a1a4bf0.jpg" height="300" width="237"> |
 
-In Fall, the movement speed along the paths near the forested areas is decreased as the leaves have covered all the visible paths.
+- In Fall, the movement speed along the paths near the forested areas is decreased as the leaves have covered all the visible paths.
 The base map is the summer season.
 
 When using multiple checkpoints between start and end, the total distance covered, and path is displayed. The coordinates from the text-file (check\_points.txt) are:
@@ -74,9 +70,10 @@ When using multiple checkpoints between start and end, the total distance covere
 
 Here, the path between the individual check points is highlighted in light-pink and points are black dots.
 
-To see how the algorithm works, let&#39;s assume only a start and end point coordinate.
+# How the algorithm works:
+Let&#39;s assume only a start and end point coordinate.
 
-Our goal is to reach the end point in least amount of time.
+## Our goal is to reach the end point in least amount of time.
 
 ![](RackMultipart20200708-4-1kecsc2_html_e9af0db1b48a2e4a.jpg) ![](RackMultipart20200708-4-1kecsc2_html_d0e02c171e89040c.gif) ![](RackMultipart20200708-4-1kecsc2_html_46591073bf3d1443.gif)In this case, [230, 327] is the start point (big green point) &amp; [350, 139] is the end point (big red point).
 
