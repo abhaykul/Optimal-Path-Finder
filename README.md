@@ -4,9 +4,16 @@ This project finds the shortest path between the start and end points on a 3D te
 
 The map I&#39;ve chosen is of the [Mendon Ponds Park](https://www2.monroecounty.gov/parks-mendonponds.php) of Rochester, NY.
 
+<img src = "https://user-images.githubusercontent.com/35390062/86868216-4dc1c180-c0a2-11ea-861b-cd6f4b899f9a.jpg" height="500" width="395">
+
+
 This is a satellite image from Google Earth outlining the park, it&#39;s trees, and the ponds.
 
-A ![](RackMultipart20200708-4-1kecsc2_html_7e8efe1958a0a712.png) s we can see, it has a different elevation. It has deep ponds and small hills.
+
+<img src = "https://user-images.githubusercontent.com/35390062/86868838-78604a00-c0a3-11ea-9769-65b710f861d8.jpg" height="500" width="395">
+
+
+As we can see, it has a different elevation. It has deep ponds and small hills.
 
 The elevations dataset is gathered from [National Elevation Dataset](http://www.sciencebase.gov/catalog/item/4f70a58ce4b058caae3f8ddb).
 
@@ -20,7 +27,9 @@ Winter can get harsh, and most of the water bodies freeze.
 
 Spring, where the snow begins to melt, and it gets muddy.
 
-![](RackMultipart20200708-4-1kecsc2_html_c3361142b0ae8404.png)Considering these scenarios, the map changes.
+<img src = "https://user-images.githubusercontent.com/35390062/86868842-7a2a0d80-c0a3-11ea-95f4-8e60a1a14cca.jpg" height="400" width="300">
+
+Considering these scenarios, the map changes.
 
 The park has various terrains; from open lands, rough meadows, forests, impassable vegetation, lake, paved roads. The movement speed will be different for different terrain. To make things easier, these different terrains are portrayed with colors on a map.
 
@@ -39,8 +48,8 @@ The park has various terrains; from open lands, rough meadows, forests, impassab
 | Ice | 0.5 m/s |
 | Mud | 0.4 m/s |
 
-
-![](RackMultipart20200708-4-1kecsc2_html_7f7bbfdb149d7e24.png) Summer (Base map)
+<img src = "" height="500" width="395">
+Summer (Base map)
 
 This 395x500 map will be used to consider the various terrains. The text file mpp.txt is used for the elevation.
 
