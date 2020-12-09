@@ -1,4 +1,5 @@
 # Shortest path on a real-world 3D map
+##(Code is private due to RIT academic policy)
 
 This project finds the shortest path between the start and end points on a 3D terrain considering the changes due to different seasons.
 
