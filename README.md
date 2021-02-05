@@ -36,12 +36,12 @@ The interpixel distance to real world distance is 10.29 m in X-axis &amp; 7.55 m
 
 The code takes input as
 
-### $python3 path\_find.py terrain.png elevations.txt check\_points.txt season\_name output\_image\_file\_name
+### $python3 path\_finder.py terrain.png elevations.txt check\_points.txt season\_name output\_image\_file\_name
 
 - **terrain.png** is the color-coded image for representing different vegetations.
 - **elevations.txt** contains the elevation of each point corresponding to the pixel in the map
 - **check\_points.txt** contains the start point, all/no check points, end point.
-- **\&lt;season\_name\&gt;** can either be Winter, summer, fall, or spring.
+- **season\_name** can either be Winter, summer, fall, or spring.
 - **output\_image\_file\_name** is the name of the output image to be generated.
 
 The seasons change the map in the following way:
